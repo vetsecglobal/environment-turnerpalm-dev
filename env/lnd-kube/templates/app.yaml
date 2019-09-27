@@ -1,0 +1,12 @@
+apiVersion: jenkins.io/v1
+kind: App
+metadata:
+  annotations:
+    jenkins.io/chart-description: A Helm chart for Kubernetes
+    jenkins.io/chart-repository: https://chartmuseum-jx.vets.ml/
+  creationTimestamp: null
+  labels:
+    jenkins.io/app-name: lnd-kube
+    jenkins.io/app-version: 0.0.21
+  name: lnd-kube
+spec: {}

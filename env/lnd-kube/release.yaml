@@ -1,0 +1,32 @@
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2019-09-27T07:38:33Z"
+  deletionTimestamp: null
+  name: '{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}'
+spec:
+  commits:
+  - author:
+      accountReference:
+      - provider: jenkins.io/git-github-userid
+      email: veteransfuturefoundation@gmail.com
+      name: Stephen Cawdery
+    branch: master
+    committer: {}
+    message: |
+      Draft create
+    sha: 6d1f1faf0770a39dfcc648dd71d76146653a39f5
+  - author: {}
+    branch: master
+    committer: {}
+    message: |
+      Updated documentation.
+    sha: 1c317798983ed67f339762c33b6036a451fc170f
+  gitCloneUrl: https://github.com/vetsecglobal/lnd-kube.git
+  gitHttpUrl: https://github.com/vetsecglobal/lnd-kube
+  gitOwner: vetsecglobal
+  gitRepository: lnd-kube
+  name: '{{ .Chart.Name }}'
+  releaseNotesURL: https://github.com/vetsecglobal/lnd-kube/releases/tag/v0.0.21
+  version: v0.0.21
+status: {}

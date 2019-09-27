@@ -10,3 +10,6 @@ dependencies:
 - name: jenkins-x-platform
   repository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
   version: 2.0.1224
+- name: lnd-kube
+  repository: https://chartmuseum-jx.vets.ml/
+  version: 0.0.21
